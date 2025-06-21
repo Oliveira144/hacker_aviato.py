@@ -1,4 +1,3 @@
-
 importar streamlit como st
 importar numpy como np
 
@@ -45,8 +44,7 @@ st.subheader("ðŸ” Análise da Rodada Atual")
 entrada_segura, mensagem = detectar_entrada_segura(st.session_state.historico)
 
 se entrada_segura:
-    st.success("âœ… ENTRADA SEGURA RECOMENDADA!
-" + mensagem)
+    st.success("âœ… ENTRADA SEGURA RECOMENDADA!\n" + mensagem)
 outro:
     st.info("â ³ Aguarde: " + mensagem)
 
